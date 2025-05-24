@@ -1,0 +1,34 @@
+<div class="customer-details-container">
+    <h3>Selected Customer Details</h3>
+    <table *ngIf="displayedCustomerDetail; else noSelection">
+        <tbody data-test-id="customer-details">
+            <tr>
+                <th>First Name</th>
+                <td>{{ displayedCustomerDetail.firstName }}</td>
+                <th>Last Name</th>
+                <td>{{ displayedCustomerDetail.lastName }}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{ displayedCustomerDetail.age }}</td>
+                <th>City</th>
+                <td>{{ displayedCustomerDetail.city }}</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>{{ displayedCustomerDetail.gender }}</td>
+                <th>Pin Code</th>
+                <td>{{ displayedCustomerDetail.pin }}</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>{{ displayedCustomerDetail.country }}</td>
+                <th>State</th>
+                <td>{{ displayedCustomerDetail.state }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ng-template #noSelection>
+        <p>No customer selected.</p>
+    </ng-template>
+</div>

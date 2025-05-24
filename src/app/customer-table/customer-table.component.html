@@ -1,0 +1,24 @@
+<div class="customer-table-container">
+    <h3>Customer Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody data-test-id="customer-list">
+            <tr *ngFor="let customer of customers">
+                <td>{{ customer.firstName }}</td>
+                <td>{{ customer.lastName }}</td>
+                <td>{{ customer.age }}</td>
+                <td>
+                    <button data-test-id="view-details-button" (click)="onViewDetails(customer.id)">View
+                        details</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

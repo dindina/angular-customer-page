@@ -1,0 +1,34 @@
+.customer-details-container {
+  margin-top: 30px;
+}
+
+.customer-details-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.customer-details-container th,
+.customer-details-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.customer-details-container th {
+  background-color: #e0e0e0;
+  color: #333;
+  width: 25%; /* Adjust as needed for alignment */
+}
+
+.customer-details-container tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.customer-details-container p {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  margin-top: 20px;
+}

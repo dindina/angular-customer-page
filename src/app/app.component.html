@@ -1,0 +1,4 @@
+<h1 header="Customer Records"></h1>
+<customer-table [customers]="customersList" (setSelectedId)="setSelectedIdParent($event)"></customer-table>
+<customer-details [selectedId]="selectedIdParent" [customerDetailsRecords]="customerDetailsRecords"
+  [customersBasicInfo]="customersList"></customer-details>
